@@ -152,7 +152,10 @@ export default function PlotSummary() {
               </p>
             </div>
             <div className="col-md-4">
-              
+            {/* <p className={styles.summarylabel}>Date of Acknowledgement</p>
+              <p className="value">
+              {plotData.emidate ? plotData.emidate : 'NA'}
+              </p> */}
             </div>
           </div>
 

@@ -1,7 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext,useState } from 'react';
 import {Button,Form,Col,Row,Card,Breadcrumb,ListGroup,Badge,InputGroup} from 'react-bootstrap';
 import { ContextHook } from '../../Context/ContextHook';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 import { TiHomeOutline } from "react-icons/ti";
+import { LuCalendar } from "react-icons/lu";
 import '../../Assets/Global.css'
 
 
@@ -19,6 +22,16 @@ setCurrentStep(3);
   setCurrentStep(1);
       }
 
+
+   
+    const [selectedDate, setSelectedDate] = useState(null);
+
+  const handleDateChange = date => {
+    
+     
+    setSelectedDate(date);
+    
+  };
   return (
     <>
  
@@ -40,7 +53,7 @@ setCurrentStep(3);
           <div className="col-md-6">
           <Form.Group>
                 <Form.Label className='form-label'>Phone Number</Form.Label>
-                <InputGroup    >
+                <InputGroup>
                     <Form.Control
                      id='txtphonenumber'
                      placeholder="enter phone number..."
@@ -143,6 +156,23 @@ setCurrentStep(3);
              </Form.Group>
             </div>
             <div className="col-md-6">
+            {/* <Form.Group>
+                <Form.Label className='form-label'>Date of Acknowledgement</Form.Label>
+                <InputGroup >
+                <DatePicker
+                placeholderText='DD/MM/YYYY'
+                selected={selectedDate}
+                onChange={handleDateChange}
+                dateFormat="dd/MM/yyyy" // customize the date format as per your requirement
+      />
+      <div style={{fontSize:'20px'}}>&nbsp;&nbsp;<LuCalendar /></div>
+      
+      </InputGroup>
+             </Form.Group> */}
+
+
+
+
             
             </div>
             </div>
