@@ -1,0 +1,13 @@
+.head-row{
+    padding: 10px;
+    background-color: rgb(106, 107, 131);
+}
+.doc-row{
+    padding: 10px;
+    font-size: 15px;
+}
+.doc-icon{
+    font-size: 17px;
+    cursor: pointer;
+    margin:7px;
+}

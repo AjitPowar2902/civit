@@ -1,0 +1,19 @@
+.custom-tabs .nav-link {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+}
+
+.custom-tabs .nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; 
+  left: 0;
+  width: 100%;
+  height: 2px; 
+  background-color: #000000; 
+}
+.custom-tabs .nav-link:hover{
+  color: #000;
+}
+
