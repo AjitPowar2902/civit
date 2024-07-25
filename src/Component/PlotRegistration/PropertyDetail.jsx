@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
-import {Button,Form,Col,Row,Card,Breadcrumb,ListGroup,Badge,InputGroup} from 'react-bootstrap';
+import {Button,Form,Col,Row,Card,Breadcrumb,ListGroup,Badge,InputGroup,ProgressBar} from 'react-bootstrap';
 import { ContextHook } from '../../Context/ContextHook';
 import { TiHomeOutline } from "react-icons/ti";
 import { useNavigate } from 'react-router-dom';
 import '../../Assets/Global.css'
+import RegistrationProgress from './RegistrationProgress';
 
 
 
@@ -31,13 +32,15 @@ export default function PropertyDetail() {
         <div className="d-flex justify-content-between align-items-center" >
           <div>
             
-            <span style={{fontSize:'24px'}}>Property Details       </span>&nbsp;&nbsp;&nbsp;
-            <span  style={{fontSize:'12px'}}>Time requires 3 mins</span>
-          </div> <br />
+          &nbsp;&nbsp;<span style={{fontSize:'24px'}}>Property Details </span>&nbsp;&nbsp; 
+            <span  style={{fontSize:'12px'}}>Time requires 3 mins</span> 
+           
+          </div> <br /> 
 
-         
+          
           
         </div>
+        <RegistrationProgress variantFirst={'warning'} property={100}/>
         </div>
         <div className="container shadow-lg p-3 mb-5 bg-body formradius" >
         <div className="container mt-4">

@@ -13,6 +13,10 @@ export default function PlotRegistration() {
 
     const [currentStep, setCurrentStep] = useState(1);
     const [plotData, setPlotData] = useState([]);
+    const [plotProgress, setPlotProgress] = useState({
+      property:"50",
+      contact:"50"
+    });
 
     function showStep(s)
     {

@@ -19,7 +19,7 @@ export default function TopBar() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Link className='nav-link'>Dashboard</Link>
+            <Link className='nav-link' to='/Dashboard'>Dashboard</Link>
            
             <NavDropdown title="My Profile" id="basic-nav-dropdown">
             <Card style={{ width: '18rem' }}>

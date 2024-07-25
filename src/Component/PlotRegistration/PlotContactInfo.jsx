@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
-import {Button,Form,Col,Row,Card,Breadcrumb,ListGroup,Badge,InputGroup} from 'react-bootstrap';
+import {Button,Form,Col,Row,Card,Breadcrumb,ListGroup,Badge,InputGroup,ProgressBar} from 'react-bootstrap';
 import { ContextHook } from '../../Context/ContextHook';
 import { TiHomeOutline } from "react-icons/ti";
+import RegistrationProgress from './RegistrationProgress';
 import '../../Assets/Global.css'
 
 
@@ -26,13 +27,15 @@ setCurrentStep(3);
         <div className="d-flex justify-content-between align-items-center" >
           <div>
             
-            <span style={{fontSize:'25px'}}>Plot/Unit Contact Information</span>&nbsp;&nbsp;&nbsp;
+          &nbsp;&nbsp; <span style={{fontSize:'25px'}}>Plot/Unit Contact Information</span>&nbsp;&nbsp;
             <span  style={{fontSize:'12px'}}>Time requires 3 mins</span>
           </div> <br />
 
          
           
         </div>
+
+        <RegistrationProgress variantFirst={'success'} property={100} variantSecond={'warning'} contact={100} check={1}/>
         </div>
         <div className="container shadow-lg p-3 mb-5 bg-body formradius" >
         <div className="container mt-4">

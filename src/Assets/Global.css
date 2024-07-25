@@ -82,7 +82,7 @@
   .headerradius
   {
     border-radius: 10px 10px 0px 0px;
-    background-color: #cbccda !important;
+    background-color: #f9f9fb !important;
   }
 
   .formradius
@@ -90,3 +90,21 @@
 
     border-radius: 0px 0px 10px 10px;
   }
+
+ 
+  .summarylabel
+    {
+      padding: 2px 0px 0px 0px;
+        color: #19191b;
+        font-size: 13px;
+    }
+  
+
+    .custom-radio .form-check-input:checked {
+      background-color: rgb(65, 59, 47);
+      border-color: rgb(65, 59, 47);
+    }
+    
+    .custom-radio .form-check-input:focus {
+      box-shadow: none;
+    }

@@ -186,7 +186,7 @@ navigate('/plotregistration');
     <Col lg='3' sm='12'>
     <Form.Select aria-label="Filter by IA">
       <option>Filter by IA</option>
-      <option value="1">Puen</option>
+      <option value="1">Pune</option>
       <option value="2">Pimpri</option>
       <option value="3">Mumbai</option>
     </Form.Select>

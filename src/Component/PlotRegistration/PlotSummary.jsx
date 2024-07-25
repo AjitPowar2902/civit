@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
-import {Button,Form,Col,Row,Card,Breadcrumb,ListGroup,Badge,InputGroup} from 'react-bootstrap';
+import {Button,Form,Col,Row,Card,Breadcrumb,ListGroup,Badge,InputGroup,ProgressBar} from 'react-bootstrap';
 import { ContextHook } from '../../Context/ContextHook';
 import { TiHomeOutline } from "react-icons/ti";
-import { MdOutlineModeEdit } from "react-icons/md";
+import { FaRegEdit } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import '../../Assets/Global.css'
 import styles from './PlotSummary.module.css'
+import RegistrationProgress from './RegistrationProgress';
 
 
 export default function PlotSummary() {
@@ -44,13 +45,14 @@ export default function PlotSummary() {
         <div className="d-flex justify-content-between align-items-center" >
           <div>
             
-            <span style={{fontSize:'24px'}}>Form Summary</span>&nbsp;&nbsp;&nbsp;<br/>
-            <span  style={{fontSize:'12px'}}>Application for new plot registration</span>
+          &nbsp;&nbsp; <span style={{fontSize:'24px'}}>Form Summary</span>&nbsp;&nbsp;&nbsp;<br/>
+          &nbsp;&nbsp;  <span  style={{fontSize:'12px'}}>Application for new plot registration</span>
           </div> <br />
 
          
           
         </div>
+        <RegistrationProgress variantFirst={'success'} property={100} variantSecond={'success'} contact={100} check={2}/>
         </div>
         <div className="container shadow-lg p-3 mb-5 bg-body formradius" >
         <br />
@@ -59,7 +61,7 @@ export default function PlotSummary() {
           <hr className="flex-grow-1" />
           &nbsp; &nbsp;
           <a onClick={handleproperty} style={{cursor:'pointer'}}>Edit</a> &nbsp; 
-          <MdOutlineModeEdit />
+          <FaRegEdit onClick={handleproperty} style={{cursor:'pointer'}} />
         </div>
         <div className="container mt-4">
           <div className="row">
@@ -113,7 +115,7 @@ export default function PlotSummary() {
           <hr className="flex-grow-1" />
           &nbsp; &nbsp;
           <a onClick={handleUnitContact} style={{cursor:'pointer'}}>Edit</a> &nbsp; 
-          <MdOutlineModeEdit />
+          <FaRegEdit onClick={handleUnitContact} style={{cursor:'pointer'}}/>
         </div>
         <div className="container mt-4">
           <div className="row">
